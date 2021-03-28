@@ -8,4 +8,9 @@ services:
       - 8081:8081
     tty: true
     volumes:
-      - ".:/home"
+      - ".:/home/react-native"
+      - "node_modules:/home/react-native/node_modules"
+
+volumes:
+  node_modules: # ここでvolumeを定義
+    driver: local

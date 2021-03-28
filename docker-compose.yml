@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ### ECCube4 ##################################
+  react-native:
+    build: .
+    privileged: true
+    ports:
+      - 8081:8081
+    tty: true
+    volumes:
+      - ".:/home"

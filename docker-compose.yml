@@ -1,6 +1,5 @@
 version: "3"
 services:
-  ### ECCube4 ##################################
   react-native:
     build: .
     privileged: true
